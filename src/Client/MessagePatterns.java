@@ -1,8 +1,6 @@
 package Client;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -71,23 +69,6 @@ public final class MessagePatterns {
         }
     }
 
-    /*    public static ArrayList<String> parseGetUserListMessage(String text) {
-            String[] parts = text.split(" ");
-            ArrayList<String> UserList = new ArrayList();
-            System.out.println(parts.length);
-            System.out.println(parts[0]);
-            if (parts.length > 1 && parts[0].equals(GET_USER_LIST)) {
-                for (int i=1;i<=parts.length;i++) {
-                    System.out.println(parts[i]);
-                    UserList.add(parts[i]);
-                };
-                return UserList;
-            } else {
-                System.out.println("Unknown message pattern: " + text);
-                return null;
-            }
-        }
-    */
     public static Set<String> parseGetUserListMessage(String text) {
         String[] parts = text.split(" ");
         if (parts.length >= 1 && parts[0].equals(GET_USER_LIST)) {

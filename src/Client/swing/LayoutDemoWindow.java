@@ -13,9 +13,6 @@ public class LayoutDemoWindow extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         setLayout(new BorderLayout());
-        //setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
-        //setLayout(new FlowLayout());
-
         JPanel panel1 = new JPanel();
         panel1.setLayout(new BorderLayout());
 

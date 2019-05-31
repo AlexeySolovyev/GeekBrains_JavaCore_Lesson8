@@ -116,10 +116,7 @@ public class ChatServer {
             }
         }
     }
-    /*public ArrayList<String> getUserList() {
-        ArrayList<String> userList = new ArrayList(clientHandlerMap.values());
-        return userList;
-    }*/
+
     public Set<String> getUserList() {
         return Collections.unmodifiableSet(clientHandlerMap.keySet());
     }
