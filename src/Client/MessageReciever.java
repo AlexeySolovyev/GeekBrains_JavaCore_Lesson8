@@ -10,6 +10,5 @@ public interface MessageReciever {
 
     void userDisconnected(String login);
 
-    //void setUserList(ArrayList<String> users);
     void setUserList(Set<String> users);
 }
